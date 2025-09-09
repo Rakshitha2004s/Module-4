@@ -24,15 +24,16 @@ b.find(c)
 # RESULT
 Thus ,the Python program to take the radius from the user and find the area of a circle using the class name umbrella and function name rain is successfully done.
 
-Exp.No:16 DICTIONARY - SIZE OF DICTIONARY
-AIM
+# Exp.No:16 DICTIONARY - SIZE OF DICTIONARY
+# AIM
 To write a Python program to print the size of a dictionary using getsizeof() from the sys module.
 
-ALGORITHM
+# ALGORITHM
 Begin the program. Import the sys module to use the getsizeof() function. Define the dictionaries with key-value pairs (dic1, dic2, dic3). Use sys.getsizeof() to calculate the memory size of each dictionary. Print the size of each dictionary in bytes. Terminate the program.
 
-PROGRAM
-REG No: 212223060113 NAME: Karnatam Bindu
+# PROGRAM
+~~~
+REG No: 212222060245 NAME: Singamala Rakshitha
 
 import sys
 dic1 = {"A": 1, "B": 2, "C": 3} 
@@ -48,20 +49,23 @@ size_dic3=sys. getsizeof(dic3)
 print("Size of dic1: "+str(size_dic1) +"bytes")
 print("Size of dic2: "+str(size_dic2) +"bytes")
 print("Size of dic3: "+str(size_dic3) +"bytes")
-OUTPUT
-Screenshot 2025-09-05 183550
-RESULT
+~~~
+# OUTPUT
+<img width="934" height="242" alt="image" src="https://github.com/user-attachments/assets/fde96cb6-688d-4509-877d-fcb9b1ef18ef" />
+
+# RESULT
 Thus, the Python program to print the size of a dictionary using getsizeof() from the sys module is successfully done.
 
-Exp.No:17 EXCEPTION HANDLING
-AIM
+# Exp.No:17 EXCEPTION HANDLING
+# AIM
 To create a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers.
 
-ALGORITHM
-Begin the program. Read a string input_str from the user using input(). Split the input string using commas (,) to create a list of grades. Use a try block to attempt converting each item in the grades list to an integer and store the result in l1. If the conversion is successful, print the list l1 containing the integer values. If an error occurs during conversion (for example, if the input is not a valid number), catch the exception and print an error message: "The grades you entered were in an invalid format." along with the original grades list. Terminate the program.
+# ALGORITHM
+Begin the program. Read a string input_str from the user using input(). Split the input string using commas (,) to create a list of grades. Use a try block to attempt converting each item in the grades list to an integer and store the result in l1. If the conversion is successful, print the list l1 containing the integer values. If an error occurs during conversion (for example, if the input is not a valid number), catch the exception and print an error message: "The grades you entered were in an invalid format." along with the original grades list. Terminate the # program.
 
-PROGRAM
-REG No: 212223060113 NAME: Karnatam Bindu
+# PROGRAM
+~~~
+REG No: 212222060245 NAME: Singamala Rakshitha
 
 grades = input().split(",")
 
@@ -71,21 +75,24 @@ try:
 except ValueError:
 	print("The grades you entered were in an invalid format.")
 print(grades)
-OUTPUT
-Screenshot 2025-09-05 183929
-RESULT
+~~~
+# OUTPUT
+<img width="1332" height="312" alt="image" src="https://github.com/user-attachments/assets/acc5e99d-a299-4d44-862d-4986d0acfce0" />
+
+# RESULT
 Thus the Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers is successfully verified.
 
-Exp.No:18 FILES - FREQUENCY OF CHARACTERS IN A FILE
-AIM
+# Exp.No:18 FILES - FREQUENCY OF CHARACTERS IN A FILE
+# AIM
 To write a Python program that reads a file and counts the frequency of each character in it.
 
-ALGORITHM
+# ALGORITHM
 Begin the program. Define the function create_file() that accepts two arguments: file_path: The path to the file. content: The string content to be written into the file. Open the file specified by file_path in write mode ('w'), and write the provided content into the file. Close the file (this is automatically done when exiting the with block). Define the function character_frequency() that accepts one argument: file_path: The path to the file whose character frequency is to be calculated. Open the file specified by file_path in read mode ('r'), and read its content into the variable content. Initialize an empty dictionary (d1) to store the frequency of each character using defaultdict(int). Loop through each character in the content: For each character ch, increment its corresponding frequency in the dictionary d1. Return the dictionary d1, which contains the frequency of each character in the file. Terminate the program.
 
-PROGRAM
-REG NO: 212223060113
-NAME : Karnatam Bindu
+# PROGRAM
+~~~
+REG NO: 212222060245
+NAME : Singamala Rakshitha
 a=input()
 b=input()
 count=0
@@ -93,20 +100,23 @@ for i in a:
     if (i==b):
         count+=1 
 print("Character "+b+" in the "+a+" is "+str(count)+" times")
-OUTPUT
-Screenshot 2025-09-05 184909
-RESULT
+~~~
+# OUTPUT
+<img width="1295" height="313" alt="image" src="https://github.com/user-attachments/assets/64c1076d-a970-4b49-9e73-d43560ad9bb2" />
+
+# RESULT
 Thus,the Python program that reads a file and counts the frequency of each character in it is successfully verified.
 
-Exp.No:20 SEB - ARITHMETIC CALCULATION USING CLASS
-AIM
+# Exp.No:20 SEB - ARITHMETIC CALCULATION USING CLASS
+# AIM
 To write a Python program to perform addition and division operations using a class. The class should be named Saveetha, and the function names should be setvalues (to set a and b values), add, and div. The program should handle the following cases: choice 1 → Perform addition choice 2 → Perform division choice 0 → Exit For other choices, print 'Invalid choice'
 
-ALGORITHM
+# ALGORITHM
 Begin the program. Create a class Saveetha. Define the following methods inside the Saveetha class: init(self): Initializes a and b to zero. setvalues(self, a, b): Sets the values of a and b. add(self): Performs the addition operation. div(self): Performs the division operation. If b is zero, returns an error message for division by zero. Create a main() function. Take input from the user for the values of a and b using setvalues(a, b) method. Use a while True loop to repeatedly ask the user for a choice: If the choice is 1, call the add() method and print the result. If the choice is 2, call the div() method and print the result. Handle division by zero. If the choice is 0, print "Exiting!" and exit the loop. If the choice is not 1, 2, or 0, print "Invalid choice". Terminate the program.
 
-PROGRAM
-REG NO : 212223060113 NAME : Karnatam Bindu
+# PROGRAM
+~~~
+REG NO : 212222060245 NAME : Singamala Rakshitha
 
 class saveetha:
     def add(self,a,b):
@@ -125,7 +135,9 @@ while choice!=0:
        print("Result: ",c.div(a,b))
     else:
         print("Exiting!")
-OUTPUT
-Screenshot 2025-09-05 185550
-RESULT
+~~~
+# OUTPUT
+<img width="747" height="458" alt="image" src="https://github.com/user-attachments/assets/1cfdebbf-9f7b-422d-ae60-7e0f3004fb43" />
+
+# RESULT
 Thus the To write a Python program to perform addition and division operations using a class. The class should be named Saveetha, and the function names should be setvalues (to set a and b values), add, and div is successfully verified.
